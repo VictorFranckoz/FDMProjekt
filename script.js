@@ -46,7 +46,7 @@ function insertText() {
 	}
 
 function goToSite() {
-	windows.location = "Measurements.HTML";
+	<a href="Measurements.html">link to page 1</a>
 }
 function refreshDeviceList(){
 	//deviceList =[];
