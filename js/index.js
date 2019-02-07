@@ -96,16 +96,16 @@ function onConnError(){
  function onData(data){ // data received from Arduino
 	//document.getElementById("receiveDiv").innerHTML =  bytesToString(data) + "<br/>";
 	//var data = str.split(",");
-
+  
 	
-	//var datastr = String(data);
-//	var KgRep = data.split(".");
+	var datastr = String(data);
+	var KgRep;
 	
 	
 	
 	//var data[0] = parseInt();
 	
-	document.getElementById("receiveDivRep").innerHTML = String(data); 
+	document.getElementById("receiveDivRep").innerHTML = String(datastr); 
 	document.getElementById("receiveDivKg").innerHTML = String(onData);
 
 /*
