@@ -99,14 +99,14 @@ function onConnError(){
 
 	
 	//var datastr = String(data);
-	var KgRep = data.split(".");
+//	var KgRep = data.split(".");
 	
 	
 	
 	//var data[0] = parseInt();
 	
-	document.getElementById("receiveDivRep").innerHTML = String(KgRep[0]); 
-	document.getElementById("receiveDivKg").innerHTML = String(KgRep[1]);
+	document.getElementById("receiveDivRep").innerHTML = String(data); 
+	document.getElementById("receiveDivKg").innerHTML = String(onData);
 
 /*
 	var KgRep = data.split(",");
