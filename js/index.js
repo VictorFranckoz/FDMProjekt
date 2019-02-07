@@ -94,11 +94,19 @@ function onConnError(){
 // parseInt("60")  // 60
 // parseInt(" 12") // 12
  function onData(data){ // data received from Arduino
-	document.getElementById("receiveDiv").innerHTML =  bytesToString(data) + "<br/>";
+	//document.getElementById("receiveDiv").innerHTML =  bytesToString(data) + "<br/>";
 	//var data = str.split(",");
-	var KgRep = data.split(",");	
+	var KgRep = data.split(",");
+
+	
+	
+// document.getElementById("aboutContent3").innerHTML = String(KgRep[0]); 	
 	//var data[0] = parseInt();
 	//var data[1] = parseInt();
+	
+	document.getElementById("receiveDivRep").innerHTML = String(KgRep[0]); 
+	document.getElementById("receiveDivKg").innerHTML = String(KgRep[1]); 
+	
 	/*
 	document.getElementById("receiveDivKg").innerHTML =  bytesToString(KgRep[1]) + "<br/>";
 	document.getElementById("receiveDivRep").innerHTML = bytesToString(KgRep[0]) + "<br/>";
@@ -133,6 +141,23 @@ function insertText() {
 	}
 function nextSet() {
 
+    
+	/* 
+ document.write(res[0]+"<br/>");
+ document.write(res[1]);
+*/
+ 
+document.getElementById("antalSet").innerHTML = bytesToString("Hej" + "<br/");
 }
+function insertText3() {
+	
+	var ok = '10,2';
 
+    var res = ok.split(",");
+	
+	
+
+	
+	//document.getElementById("aboutContent3").innerHTML = "Fitness Digital Monitor helps you keep track of your fitness routines: How much weight you use and how many reps and sets you take! This will help you keep track of your development as well as how much weight you used on previous workouts on the different machines. It is also great at motivating you, seeing your constant improvements";		
+	}
 	
