@@ -105,8 +105,8 @@ function onConnError(){
 	
 	//var data[0] = parseInt();
 	
-	document.getElementById("receiveDivRep").innerHTML = String(datastr); 
-	document.getElementById("receiveDivKg").innerHTML = String(onData);
+	document.getElementById("receiveDivRep").innerHTML = bytesToString(dataStr); 
+	//document.getElementById("receiveDivKg").innerHTML = "jaja";
 
 /*
 	var KgRep = data.split(",");
