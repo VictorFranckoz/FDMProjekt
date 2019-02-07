@@ -94,15 +94,15 @@ function onConnError(){
 // parseInt("60")  // 60
 // parseInt(" 12") // 12
  function onData(data){ // data received from Arduino
- 
+ /*
 	var data = str.split(",");
-	/*
+	
 	var data[0] = parseInt(Reps);
 	var data[1] = parseInt(Kilo);
-	*/
+	
 	document.getElementById("receiveDiv").innerHTML =  bytesToString(data[1]) + "<br/>";
 	document.getElementById("receiveDiv2").innerHTML = bytesToString(data[0]) + "<br/>";
-	//document.getElementById("receiveDiv").innerHTML =  bytesToString(data) + "<br/>";
+	*/document.getElementById("receiveDiv").innerHTML =  bytesToString(data) + "<br/>";
 }
 /*
 function data(txt){
