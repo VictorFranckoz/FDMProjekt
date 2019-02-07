@@ -98,15 +98,15 @@ function onConnError(){
 	//var data = str.split(",");
   
 	
-	var datastr = String(data);
+	var datastr = bytesToString(data);
 	var KgRep;
 	
 	
 	
 	//var data[0] = parseInt();
 	
-	document.getElementById("receiveDivRep").innerHTML = bytesToString(dataStr); 
-	//document.getElementById("receiveDivKg").innerHTML = "jaja";
+	document.getElementById("receiveDivRep").innerHTML = bytesToString(data); 
+	document.getElementById("receiveDivKg").innerHTML = String(datastr);
 
 /*
 	var KgRep = data.split(",");
