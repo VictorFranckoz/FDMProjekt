@@ -105,7 +105,7 @@ function onConnError(){
 	
 	//var data[0] = parseInt();
 	
-	document.getElementById("receiveDivRep").innerHTML = String(KgRep[0]); 
+	document.getElementById("receiveDivRep").innerHTML = String(data); 
 	document.getElementById("receiveDivKg").innerHTML = String(KgRep[1]);
 
 /*
@@ -158,7 +158,7 @@ function nextSet() {
 document.getElementById("antalSet").innerHTML = bytesToString("Hej" + "<br/");
 }
 function insertText3() {
-	/*
+	
 	var ok = '10,2';
 
     var res = ok.split(",");
@@ -174,14 +174,14 @@ function insertText3() {
 	// var slukk = '"'+sluk+'"';
 	var paf =2.6;
 	var pla = String(paf);
-	 var KgRep = pla.split(".");
+	 var KgRep = paf.split(".");
 	
 	
 	
 	//var data[0] = parseInt();
 	
 	document.getElementById("receiveDivRep").innerHTML = String(KgRep[0]); 
-	document.getElementById("receiveDivKg").innerHTML = String(KgRep[1]);*/
+	document.getElementById("receiveDivKg").innerHTML = String(KgRep[1]);
 	
 }
 	
