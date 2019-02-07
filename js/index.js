@@ -96,21 +96,29 @@ function onConnError(){
  function onData(data){ // data received from Arduino
 	//document.getElementById("receiveDiv").innerHTML =  bytesToString(data) + "<br/>";
 	//var data = str.split(",");
+
+	
+	var datastr = String(data);
+	var KgRep = datastr.split(".");
+	
+	
+	
+	//var data[0] = parseInt();
+	
+	document.getElementById("receiveDivRep").innerHTML = String(KgRep[0]); 
+	document.getElementById("receiveDivKg").innerHTML = String(KgRep[1]);
+
+/*
 	var KgRep = data.split(",");
 
 	
 	
-// document.getElementById("aboutContent3").innerHTML = String(KgRep[0]); 	
 	//var data[0] = parseInt();
-	//var data[1] = parseInt();
 	
 	document.getElementById("receiveDivRep").innerHTML = String(KgRep[0]); 
 	document.getElementById("receiveDivKg").innerHTML = String(KgRep[1]); 
-	
-	/*
-	document.getElementById("receiveDivKg").innerHTML =  bytesToString(KgRep[1]) + "<br/>";
-	document.getElementById("receiveDivRep").innerHTML = bytesToString(KgRep[0]) + "<br/>";
-	*/}
+	*/
+	}
 
 function data(txt){
 	messageInput.value = txt;
@@ -150,14 +158,32 @@ function nextSet() {
 document.getElementById("antalSet").innerHTML = bytesToString("Hej" + "<br/");
 }
 function insertText3() {
-	
+	/*
 	var ok = '10,2';
 
     var res = ok.split(",");
 	
+	document.getElementById("receiveDivRep").innerHTML = String(res[0]); 
+	document.getElementById("receiveDivKg").innerHTML = String(res[1]); 
 	
-
 	
-	//document.getElementById("aboutContent3").innerHTML = "Fitness Digital Monitor helps you keep track of your fitness routines: How much weight you use and how many reps and sets you take! This will help you keep track of your development as well as how much weight you used on previous workouts on the different machines. It is also great at motivating you, seeing your constant improvements";		
-	}
+	
+	//var slap = String("3,2");
+	
+	//var sluk = String('3,2');
+	// var slukk = '"'+sluk+'"';
+	var paf =2.6;
+	var pla = String(paf);
+	 var KgRep = pla.split(".");
+	
+	
+	
+	//var data[0] = parseInt();
+	
+	document.getElementById("receiveDivRep").innerHTML = String(KgRep[0]); 
+	document.getElementById("receiveDivKg").innerHTML = String(KgRep[1]);*/
+	
+}
+	
+	//document.getElementById("aboutContent3").innerHTML = }
 	
