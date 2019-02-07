@@ -1,8 +1,8 @@
 body{
 	background-color: #363636;
 	color: #8a8a8a;
-	font-family: freak out go bananas;
-    font-size: 35px;
+	font-family: arial;
+    font-size: 20px;
 }	
 img{
 	width: 100%;	
@@ -24,8 +24,8 @@ img{
 #messageInput{
 	
 }
-#list{
-	background-color: red;
+#bleDeviceList {
+	font-size: 10px;
 }
 
 /* width will be 100% of content */
@@ -41,3 +41,27 @@ img{
 #ledOffButton{
 	width: 100%;
 }
+button { 
+  width:300px; 
+  height:35px;
+  background-color: #555555;
+  font-family: arial;
+  font-size: 20px;
+  text-align: center;
+} 
+html {
+  scroll-behavior: smooth;
+ }
+ 
+ a {
+  text-decoration: none;
+  color: #8a8a8a;
+ } 
+ 
+ #down {
+  margin-top: 5%;
+  } 
+  
+ #aboutContent {
+	 font-size: 25px;
+ }

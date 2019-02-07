@@ -74,7 +74,7 @@ function conn(){
 	ble.connect(ConnDeviceId, onConnect, onConnError);
  }
  
- //succes
+ //success
 function onConnect(){
 	document.getElementById("statusDiv").innerHTML = " Status: Connected";
 	document.getElementById("bleId").innerHTML = ConnDeviceId;
@@ -87,11 +87,28 @@ function onConnError(){
 	document.getElementById("statusDiv").innerHTML = " Status: Disonnected";
 }
 
+// str = "12, 60"
+// var partsOfStr = str.split(",")
+// var partsOfStr[0]  // "12"
+// partsOfStr[1] // " 60"
+// parseInt("60")  // 60
+// parseInt(" 12") // 12
  function onData(data){ // data received from Arduino
-	document.getElementById("receiveDiv").innerHTML =  "Received: " + bytesToString(data) + "<br/>";
+ 
+	var data = str.split(",");
+	
+	var data[0] = parseInt(Reps);
+	var data[1] = parseInt(Kilo);
+	
+	
+	document.getElementById("receiveDiv2").innerHTML = bytesToString(data[0]) + "<br/>";
+	document.getElementById("receiveDiv").innerHTML =  bytesToString(data[1]) + "<br/>";
 }
 
-function data(txt){
+function data[0](txt){
+	messageInput.value = txt;
+}	
+function data[1](txt){
 	messageInput.value = txt;
 }	
 
@@ -113,6 +130,12 @@ function onDisconnect(){
 }
 function onError(reason)  {
 	alert("ERROR: " + reason); // real apps should use notification.alert
+}
+function insertText() {
+	document.getElementById("aboutContent").innerHTML = "Fitness Digital Monitor helps you keep track of your fitness routines: How much weight you use and how many reps and sets you take! This will help you keep track of your development as well as how much weight you used on previous workouts on the different machines. It is also great at motivating you, seeing your constant improvements";		
+	}
+function nextSet() {
+
 }
 
 	
