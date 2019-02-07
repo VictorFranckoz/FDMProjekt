@@ -105,7 +105,7 @@ function onConnError(){
 	
 	//var data[0] = parseInt();
 	
-	document.getElementById("receiveDivRep").innerHTML = String(data); 
+	document.getElementById("receiveDivRep").innerHTML = bytesToString(KgRep[0]); 
 	document.getElementById("receiveDivKg").innerHTML = String(KgRep[1]);
 
 /*
@@ -172,8 +172,8 @@ function insertText3() {
 	
 	//var sluk = String('3,2');
 	// var slukk = '"'+sluk+'"';
-	var paf =2.6;
-	var pla = String(paf);
+	var paf =2.2;
+	String pla = String(paf);
 	 var KgRep = paf.split(".");
 	
 	
