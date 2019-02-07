@@ -99,14 +99,14 @@ function onConnError(){
   
 	
 	var datastr = bytesToString(data);
-	var KgRep;
 	
+var KgRep = datastr.split(".")
 	
 	
 	//var data[0] = parseInt();
 	
-	document.getElementById("receiveDivRep").innerHTML = bytesToString(data); 
-	document.getElementById("receiveDivKg").innerHTML = String(datastr);
+	document.getElementById("receiveDivRep").innerHTML = bytesToString(KgRep[0]); 
+	document.getElementById("receiveDivKg").innerHTML = String(KgRep[1]);
 
 /*
 	var KgRep = data.split(",");
@@ -158,7 +158,7 @@ function nextSet() {
 document.getElementById("antalSet").innerHTML = bytesToString("Hej" + "<br/");
 }
 function insertText3() {
-	
+	/*
 	var ok = '10,2';
 
     var res = ok.split(",");
@@ -175,7 +175,7 @@ function insertText3() {
 	//var data[0] = parseInt();
 	
 	document.getElementById("receiveDivRep").innerHTML = String(KgRep[0]); 
-	document.getElementById("receiveDivKg").innerHTML = String(KgRep[1]);
+	document.getElementById("receiveDivKg").innerHTML = String(KgRep[1]);*/
 	
 }
 	
